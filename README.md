@@ -6,9 +6,7 @@ This project implements an **Emotion Recognition System** using audio data. The 
 - [Project Overview](#project-overview)
 - [Datasets](#datasets)
 - [Model Architecture](#model-architecture)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Results](#results)
 - [Folder Structure](#folder-structure)
 - [Acknowledgments](#acknowledgments)
 
