@@ -65,7 +65,7 @@ for _, row in tqdm(df.iterrows(), total=len(df)):
         emotions.append(emotion)
         dataset_names.append(dataset_name)
     except Exception as e:
-        print(f"⚠️ Skipped {file_path}: {e}")
+        print(f"Skipped {file_path}: {e}")
 
 # ------------------------------
 # LABEL ENCODING & SAVE
@@ -79,5 +79,5 @@ features_df["emotion"] = labels_encoded
 features_df["dataset_name"] = dataset_names
 features_df.to_csv(OUTPUT_CSV, index=False)
 
-print(f"\n✅ Feature extraction complete. Saved to: {OUTPUT_CSV}")
-print(f"🔢 Encoded emotions: {list(le.classes_)}")
+print(f"\nFeature extraction complete. Saved to: {OUTPUT_CSV}")
+print(f"Encoded emotions: {list(le.classes_)}")

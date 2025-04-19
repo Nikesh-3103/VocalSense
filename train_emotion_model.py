@@ -71,7 +71,7 @@ x = Bidirectional(LSTM(64, return_sequences=True))(x)
 x = LayerNormalization()(x)
 x = Dropout(0.4)(x)
 
-# 🔥 Add Attention layer
+#  Add Attention layer
 attention = Attention()([x, x])
 x = tf.keras.layers.GlobalAveragePooling1D()(attention)
 
@@ -122,7 +122,7 @@ history = model.fit(
 test_loss, test_acc, test_precision, test_recall = model.evaluate(X_test, y_test)
 f1_score = 2 * (test_precision * test_recall) / (test_precision + test_recall + K.epsilon())
 
-print(f"\n✅ Test Accuracy: {test_acc * 100:.2f}%")
-print(f"🎯 Precision: {test_precision:.4f} | Recall: {test_recall:.4f} | F1 Score: {f1_score:.4f}")
+print(f"\nTest Accuracy: {test_acc * 100:.2f}%")
+print(f"Precision: {test_precision:.4f} | Recall: {test_recall:.4f} | F1 Score: {f1_score:.4f}")
 
 model.save("final_emotion_model.keras")
