@@ -69,3 +69,6 @@ Pass your audio features to the model for predictions
 ## Acknowledgments
 This project was created by **Nikesh**. The model was built from scratch and trained using publicly available datasets. Special thanks to the creators of the RAVDESS, SAVEE, TESS, and CREMA-D datasets for providing the data used in this project.
 
+## Contact
+nikeshkumar31030@gmail.com
+
